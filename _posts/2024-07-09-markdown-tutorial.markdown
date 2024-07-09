@@ -115,4 +115,4 @@ de outra forma teria um significado especial na sintaxe de formatação da Markd
  
 ###### Autor: *Vo Tran Thanh Luong*.
 ###### Tradução: *Héricles Emanuel*.
-###### Correções: [*Alexander Santos*](https://https://github.com/Ronkiro).
+###### Correções: [*Alexander Santos*](https://https://github.com/Ronkiro), [*Alexandre Quintela*](https://alexandrequintela.github.io).

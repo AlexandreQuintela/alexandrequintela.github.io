@@ -9,6 +9,7 @@ categories: csharp
 🚀 𝗦𝘁𝗿𝗶𝗻𝗴.𝗘𝗾𝘂𝗮𝗹𝘀 é mais rápido que ToUpper() ou ToLower() devido à comparação direta de caracteres, evitando a alocação de memória e reduzindo a sobrecarga para comparação de strings que não diferenciam maiúsculas de minúsculas.
 
 🔥 Para realizar comparação de strings, é melhor usar os métodos de comparação integrados como 𝗦𝘁𝗿𝗶𝗻𝗴.𝗘𝗾𝘂𝗮𝗹𝘀 com opções StringComparison apropriadas, que lidam corretamente com a insensibilidade a maiúsculas e minúsculas e considerações culturais, mantendo melhor desempenho e precisão.
+
 {% highlight csharp %}
 /// <summary>
 /// Comparação lenta.
@@ -17,7 +18,6 @@ public bool saoIguais(string primeira, string segunda)
 {  
   return primeira.ToUpper() == segunda.ToUpper();
 }
-#=> prints 'Hi, Tom' to STDOUT.
 {% endhighlight %}
 
 {% highlight csharp %}

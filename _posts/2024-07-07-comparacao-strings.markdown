@@ -11,21 +11,25 @@ categories: csharp
 🔥 Para realizar comparação de strings, é melhor usar os métodos de comparação integrados como 𝗦𝘁𝗿𝗶𝗻𝗴.𝗘𝗾𝘂𝗮𝗹𝘀 com opções StringComparison apropriadas, que lidam corretamente com a insensibilidade a maiúsculas e minúsculas e considerações culturais, mantendo melhor desempenho e precisão.
 
 {% highlight csharp %}
-/// <summary>
-/// Comparação lenta.
-/// </summary>
-public bool saoIguais(string primeira, string segunda)
-{  
-  return primeira.ToUpper() == segunda.ToUpper();
-}
-{% endhighlight %}
+    /// <summary>
+    /// Desempenho na comparação de string´s
+    /// </summary>
+    [MemoryDiagnoser]
+    public class DesempenhoComparacaoString
+    {
+        private string str1 = "ComP@rand0 StR1ng´s";
+        private string str2 = "ComparandO String´S";
 
-{% highlight csharp %}
-/// <summary>
-/// Comparação rápida.
-/// </summary>
-public bool saoIguais(string primeira, string segunda)
-{
-  return string.Equals(primeira, segunda, StringComparison.OrdinalIgnoreCase);
-}
+        [Benchmark(Baseline = true)]
+        public bool Equals_OrdinalIgnoreCase() => string.Equals(str1, str2, StringComparison.OrdinalIgnoreCase);
+
+        [Benchmark]
+        public bool Compare_OrdinalIgnoreCase() => string.Compare(str1, str2, StringComparison.OrdinalIgnoreCase) == 0;
+
+        [Benchmark]
+        public bool ToLower() => str1.ToLower() == str2.ToLower();
+
+        [Benchmark]
+        public bool ToUpper() => str1.ToUpper() == str2.ToUpper();
+    }
 {% endhighlight %}

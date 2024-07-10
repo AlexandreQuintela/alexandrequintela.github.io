@@ -21,10 +21,10 @@
 title: Alexandre Quintela Blog
 email: alexsquin@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Olá! Sou Alexandre Quintela, um Analista de Sistemas apaixonado por desenvolvimento de software, especialmente em .NET C#. Atualmente, estou focado em aprimorar minhas habilidades nessa área através de estudos e projetos práticos.
-baseurl: "" # the subpath of your site, e.g. /blog
+  Olá! Sou Alexandre Quintela, seja bem vindo.
+baseurl: "/" # the subpath of your site, e.g. /blog
 url: "alexandrequintela.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: alexsquin
+linkedin_username: alexandreschefferquintela
 github_username:  alexandrequintela
 
 # Build settings

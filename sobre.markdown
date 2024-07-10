@@ -4,7 +4,6 @@ title: Sobre
 permalink: /sobre/
 ---
 
-
 ## Analista de Sistemas | Desenvolvedor .NET C#
 
 Olá! Sou Alexandre Quintela, um Analista de Sistemas apaixonado por desenvolvimento de software, especialmente em .NET C#. Atualmente, estou focado em aprimorar minhas habilidades nessa área através de estudos e projetos práticos.
